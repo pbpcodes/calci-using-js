@@ -40,6 +40,7 @@ operationsElem.forEach(ops => {
             res = parseFloat(display2Number);
         }
         clearVar(opName);
+        lastOperation=opName;
     })
 })
 
@@ -48,4 +49,23 @@ function clearVar(namee = ''){
     display1Elem.innerText = display1Number;
     display2Elem.innerText = '';
     display2Number='';
+    currentResElem.innerText = res;
 };
+
+function mathOperation(){
+    if(lastOperation==='x'){
+        res = parseFloat(res)*parseFloat(display2Number);
+    }
+    else if(lastOperation==='+'){
+        res = parseFloat(res)+parseFloat(display2Number);
+    }
+    else if(lastOperation==='-'){
+        res = parseFloat(res)-parseFloat(display2Number);
+    }
+    else if(lastOperation==='/'){
+        res = parseFloat(res)/parseFloat(display2Number);
+    }
+    else if(lastOperation==='%'){
+        res = parseFloat(res)%parseFloat(display2Number);
+    }
+}
