@@ -70,13 +70,13 @@ function mathOperation(){
     }
 }
 
-
 equalsTo.addEventListener('click', (e)=>{
     if(!display1Number || !display2Number) 
     return;
     dottt=false;
     mathOperation();
     clearVar();
+
     display2Elem.innerText = res;
     currentResElem.innerText = '';
     display2Number = res;
