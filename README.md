@@ -46,13 +46,7 @@
 
 ## :dart: About ##
 
-Just a basic calculator web-app for daily use.
-
-## :sparkles: Features ##
-
-:heavy_check_mark: Feature 1;\
-:heavy_check_mark: Feature 2;\
-:heavy_check_mark: Feature 3;
+Just a basic calculator web-app for daily use. Live at: https://just-a-calci.netlify.app
 
 ## :rocket: Technologies ##
 
